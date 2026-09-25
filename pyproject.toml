@@ -1,0 +1,30 @@
+[project]
+name = "cx-agent-assist"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mark Aguilar", email = "98939020+psmarka@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "faker>=40.39.0",
+    "langchain>=1.4.2",
+    "langchain-anthropic>=1.7.4",
+    "langchain-openai>=1.6.6",
+    "langgraph>=1.2.12",
+    "langsmith>=0.14.1",
+    "pandas>=3.0.6",
+    "pgvector>=0.5.0",
+    "psycopg[binary]>=3.3.6",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
+    "sqlalchemy>=2.1.1",
+]
+
+[project.scripts]
+cx-agent-assist = "cx_agent_assist:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
